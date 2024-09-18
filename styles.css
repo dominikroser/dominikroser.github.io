@@ -1,0 +1,33 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.repo-button {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 10px 20px;
+    background-color: rgba(182, 186, 190, 0.8); /* Semi-transparent background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 10; /* Ensure the button is on top */
+}
+
+.repo-button:hover {
+    background-color: rgba(0, 86, 179, 0.8); /* Change color on hover */
+}
+
+.image-container img {
+    z-index: 1; /* Ensure the image is behind the button */
+}
